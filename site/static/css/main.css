@@ -1,0 +1,8 @@
+/* This is an example site-wide CSS file. In this case, it's imported by the mainPage template. */
+body {
+	background-color: black;
+	color: white;
+}
+a {
+	color: #0068ff;
+}
