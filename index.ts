@@ -1,12 +1,9 @@
 import { Wunphile } from 'wunphile'
-import { join } from 'node:path'
-import { readdir } from 'node:fs/promises'
 
 import { NotFoundPage } from './component/page/NotFoundPage.ts'
 import { HomePage } from './component/page/HomePage.ts'
 import { ExamplePage } from './component/page/ExamplePage.ts'
-import { readBlogPost, readBlogPostsFromDir } from './util/blog.ts'
-import type { BlogPost } from './util/blog.ts'
+import { readBlogPostsFromDir } from './util/blog.ts'
 import { BlogPostPage } from './component/page/BlogPostPage.ts'
 import { BlogIndexPage } from './component/page/BlogIndexPage.ts'
 
