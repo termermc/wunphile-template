@@ -132,6 +132,3 @@ dist
 
 # IDE
 /.idea
-
-# simple-js-ssg
-/site_out
