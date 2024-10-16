@@ -28,3 +28,16 @@ This template uses TypeScript, but takes advantage of Node.js 22.6's built-in ty
 to run TypeScript code directly without a build step.
 
 This allows hot reloading to work without resorting to a complicated prebuild system.
+
+## IDE Integration
+
+Wunphile uses ES6 template literals for composing HTML.
+Different IDEs need different configuration to provide syntax highlighting and intellisense for HTML inside template literals.
+
+### VS Code
+
+Install the [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html) extension.
+
+### JetBrains IDEs
+
+Recent versions of JetBrains IDEs should support syntax highlighting and intellisense for HTML inside template literals out of the box.
