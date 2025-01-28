@@ -1,11 +1,11 @@
 import { Wunphile } from 'wunphile'
 
-import { NotFoundPage } from './component/page/NotFoundPage.ts'
-import { HomePage } from './component/page/HomePage.ts'
-import { ExamplePage } from './component/page/ExamplePage.ts'
-import { readBlogPostsFromDir } from './util/blog.ts'
-import { BlogPostPage } from './component/page/BlogPostPage.ts'
-import { BlogIndexPage } from './component/page/BlogIndexPage.ts'
+import { NotFoundPage } from './src/component/page/NotFoundPage.ts'
+import { HomePage } from './src/component/page/HomePage.ts'
+import { ExamplePage } from './src/component/page/ExamplePage.ts'
+import { readBlogPostsFromDir } from './src/util/blog.ts'
+import { BlogPostPage } from './src/component/page/BlogPostPage.ts'
+import { BlogIndexPage } from './src/component/page/BlogIndexPage.ts'
 
 const ssg = new Wunphile(import.meta.url)
 

@@ -1,7 +1,11 @@
-import config from '../config.ts'
+import config from '../../config.ts'
 
-import { html } from 'wunphile'
-import type { Component, RenderFragments } from 'wunphile'
+import {
+	type Component,
+	type RenderFragments,
+	BehaviorLoader,
+	html,
+} from 'wunphile'
 
 type LayoutProps = {
 	/**
@@ -67,6 +71,7 @@ export const Layout: Component<LayoutProps, RenderFragments> = ({ title, descrip
 	        ${(scripts ?? []).map(uri => html`
 				<script src="${uri}"></script>
 			`)}
+        	${BehaviorLoader()}
         </body>
         </html>
 	`

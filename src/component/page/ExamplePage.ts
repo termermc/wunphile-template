@@ -2,6 +2,7 @@ import { html } from 'wunphile'
 import type { Component } from 'wunphile'
 import { Layout } from '../Layout.ts'
 import { Code } from '../Code.ts'
+import { Counter } from '../Counter.ts'
 
 /**
  * An example page without much content.
@@ -22,6 +23,10 @@ const c = a + b
 console.log(c)
 	`)}
         </div>
+        <br/>
+        ${Counter({ initialText: 'Click me!' })}
+        <br/>
+        ${Counter({ initialCount: 10, initialText: 'Start from 10' })}
         <p>This is boring. Go read the <a href="/blog/">blog</a> instead.</p>
 	`)
 }

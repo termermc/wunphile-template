@@ -1,5 +1,4 @@
-import { html } from 'wunphile'
-import type { Component, RenderFragments } from 'wunphile'
+import { type Component,html } from 'wunphile'
 import type { BlogPost } from '../../util/blog.ts'
 import { Layout } from '../Layout.ts'
 import { marked } from 'marked'
