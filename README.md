@@ -16,7 +16,7 @@ To run the site in development mode, run `npm run dev`.
 You can also build the site using Docker:
 
 ```shell
-mkdir dist
+mkdir -p dist
 docker build -t wunphile-template .
 docker run -v ./dist:/data/dist wunphile-template
 ```
