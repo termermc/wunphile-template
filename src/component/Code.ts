@@ -20,7 +20,10 @@ type CodeProps = {
 /**
  * Component that shows styled code of some kind wrapped inside a <code> element.
  */
-export const Code: Component<CodeProps, string> = ({ lang, trim }, children) => {
+export const Code: Component<CodeProps, string> = (
+	{ lang, trim },
+	children,
+) => {
 	let code: string
 	if (trim ?? true) {
 		code = children.trim()

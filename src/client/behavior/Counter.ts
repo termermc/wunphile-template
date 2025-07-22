@@ -9,5 +9,5 @@ export default {
 		button.addEventListener('click', () => {
 			button.innerText = `Clicked ${count++} times`
 		})
-	}
+	},
 } satisfies BehaviorModule

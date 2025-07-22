@@ -37,7 +37,10 @@ type LayoutProps = {
 /**
  * The main page layout.
  */
-export const Layout: Component<LayoutProps, RenderFragments> = ({ title, description, stylesheets, scripts }, children) => {
+export const Layout: Component<LayoutProps, RenderFragments> = (
+	{ title, description, stylesheets, scripts },
+	children,
+) => {
 	let titleRes: string
 	if (title) {
 		titleRes = `${title} - ${config.title}`
@@ -46,33 +49,41 @@ export const Layout: Component<LayoutProps, RenderFragments> = ({ title, descrip
 	}
 
 	return html`
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charset="UTF-8" />
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0"
+				/>
 
-            <title>${titleRes}</title>
-            <meta property="og:title" content="${titleRes}">
-	        
-	        ${description ? html`
-		        <meta property="og:description" content="${description}">
-			` : ''}
+				<title>${titleRes}</title>
+				<meta property="og:title" content="${titleRes}" />
 
-            <link rel="stylesheet" href="/css/main.css">
-	        <link rel="stylesheet" href="/css/lib/hljs-11.9.0.min.css">
-	        ${(stylesheets ?? []).map(uri => html`
-				<link rel="stylesheet" href="${uri}">
-			`)}
-        </head>
-        <body>
-	        ${children}
-	        <script src="/js/main.js"></script>
-	        ${(scripts ?? []).map(uri => html`
-				<script src="${uri}"></script>
-			`)}
-        	${BehaviorLoader()}
-        </body>
-        </html>
+				${description
+					? html`
+							<meta
+								property="og:description"
+								content="${description}"
+							/>
+						`
+					: ''}
+
+				<link rel="stylesheet" href="/css/main.css" />
+				<link rel="stylesheet" href="/css/lib/hljs-11.9.0.min.css" />
+				${(stylesheets ?? []).map(
+					(uri) => html` <link rel="stylesheet" href="${uri}" /> `,
+				)}
+			</head>
+			<body>
+				${children}
+				<script src="/js/main.js"></script>
+				${(scripts ?? []).map(
+					(uri) => html` <script src="${uri}"></script> `,
+				)}
+				${BehaviorLoader()}
+			</body>
+		</html>
 	`
 }

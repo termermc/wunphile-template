@@ -86,14 +86,14 @@ export async function readBlogPost(path: string): Promise<BlogPost> {
 	// Check if it starts with a header
 	const headerMatch = content.match(blogHeaderRegex)
 	if (!headerMatch) {
-		throw new Error(`Blog post ${filename} does not have a header. The first line must be a level 1 heading. Example:\n\n# Hello World`)
+		throw new Error(
+			`Blog post ${filename} does not have a header. The first line must be a level 1 heading. Example:\n\n# Hello World`,
+		)
 	}
 
 	const [, title] = headerMatch
 
-	content = content
-		.substring(headerMatch[0].length)
-		.trim()
+	content = content.substring(headerMatch[0].length).trim()
 
 	// Try to find the first paragraph.
 	const nlIdx = content.indexOf('\n')

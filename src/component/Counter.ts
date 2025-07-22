@@ -13,8 +13,14 @@ type CounterProps = {
 	initialText: string
 }
 
-export const Counter: Component<CounterProps, void> = ({ initialCount, initialText }) => {
-	return BehaviorComponent({ module: import('../client/behavior/Counter.ts') }, html`
-		<button data-initial="${initialCount ?? 0}">${initialText}</button>
-	`)
+export const Counter: Component<CounterProps, void> = ({
+	initialCount,
+	initialText,
+}) => {
+	return BehaviorComponent(
+		{ module: import('../client/behavior/Counter.ts') },
+		html`
+			<button data-initial="${initialCount ?? 0}">${initialText}</button>
+		`,
+	)
 }
