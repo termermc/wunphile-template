@@ -4,7 +4,7 @@ Template for a site using Wunphile.
 
 It implements a few basic pages, and a simple markdown blog.
 
-# Dependencies
+# Prerequisites
 
 - Node.js 22.6+
 
