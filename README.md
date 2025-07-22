@@ -14,6 +14,8 @@ To build the site, run `npm run build`.
 
 To run the site in development mode, run `npm run dev`.
 
+To format all code with Prettier, run `npm run format`.
+
 # Docker
 
 You can also build the site using Docker:
@@ -42,6 +44,6 @@ Different IDEs need different configuration to provide syntax highlighting and i
 
 Install the [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html) extension.
 
-### JetBrains IDEs
+### JetBrains IDEs (WebStorm, IntelliJ IDEA, etc.)
 
 Recent versions of JetBrains IDEs should support syntax highlighting and intellisense for HTML inside template literals out of the box.
