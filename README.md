@@ -6,7 +6,7 @@ It implements a few basic pages, and a simple markdown blog.
 
 # Prerequisites
 
-- Node.js 22.6+
+- Node.js 24+
 
 # Usage
 
@@ -14,7 +14,9 @@ To build the site, run `npm run build`.
 
 To run the site in development mode, run `npm run dev`.
 
-To format all code with Prettier, run `npm run format`.
+To format all code with Prettier, run `npm run fmt`.
+
+To check TypeScript types, run `npm run check`.
 
 # TypeScript
 
