@@ -1,6 +1,6 @@
-FROM docker.io/node:22.9.0-alpine3.19
+FROM docker.io/node:24.22.1-alpine3.24
 WORKDIR /data
 COPY . .
-RUN npm install --omit=dev --omit=optional
+RUN npm ci --omit=dev --omit=optional
 
-CMD ["npm", "run", "build"]
+CMD ["node", "--run", "build"]

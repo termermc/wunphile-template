@@ -1,10 +1,30 @@
 {
 	"compilerOptions": {
-		"target": "ES2022",
-		"module": "ES2022",
+		"allowJs": true,
+		"checkJs": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictBindCallApply": true,
+		"strictFunctionTypes": true,
+		"strictPropertyInitialization": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"types": ["node"],
+		"skipLibCheck": true,
+
+		// Options recommended by the Node.js docs.
+		// See: https://nodejs.org/api/typescript.html
 		"noEmit": true,
-		"moduleResolution": "node",
-		"allowImportingTsExtensions": true,
-		"types": ["node"]
-	}
+		"target": "esnext",
+		"module": "nodenext",
+		"rewriteRelativeImportExtensions": true,
+		"erasableSyntaxOnly": true,
+		"verbatimModuleSyntax": true
+	},
+	"include": ["index.ts", "prettier.config", "src/**/*"]
 }

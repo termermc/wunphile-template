@@ -61,14 +61,16 @@ export const Layout: Component<LayoutProps, RenderFragments> = (
 				<title>${titleRes}</title>
 				<meta property="og:title" content="${titleRes}" />
 
-				${description
-					? html`
-							<meta
-								property="og:description"
-								content="${description}"
-							/>
-						`
-					: ''}
+				${
+					description
+						? html`
+								<meta
+									property="og:description"
+									content="${description}"
+								/>
+							`
+						: ''
+				}
 
 				<link rel="stylesheet" href="/css/main.css" />
 				<link rel="stylesheet" href="/css/lib/hljs-11.9.0.min.css" />

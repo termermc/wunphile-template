@@ -10,20 +10,20 @@ It implements a few basic pages, and a simple markdown blog.
 
 # Usage
 
-To build the site, run `npm run build`.
+To build the site, run `node --run build`.
 
-To run the site in development mode, run `npm run dev`.
+To run the site in development mode, run `node --run dev`.
 
-To format all code with Prettier, run `npm run fmt`.
+To format all code with Prettier, run `node --run fmt`.
 
-To check TypeScript types, run `npm run check`.
+To check TypeScript types, run `node --run check`.
 
 # TypeScript
 
 This template uses TypeScript, but takes advantage of Node.js 22.6's built-in type stripping feature
 to run TypeScript code directly without a build step.
 
-This allows hot reloading to work without resorting to a complicated prebuild system.
+This allows hot reloading to work without resorting to a complicated build system like Vite.
 
 # Docker
 
@@ -35,7 +35,7 @@ docker build -t wunphile-template .
 docker run -v ./dist:/data/dist wunphile-template
 ```
 
-The above also works with Podman, if you replace `docker` with `podman`.
+The above also works with Podman if you replace `docker` with `podman`.
 
 # Cloudflare Workers
 
