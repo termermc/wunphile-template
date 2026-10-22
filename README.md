@@ -20,7 +20,7 @@ To check TypeScript types, run `node --run check`.
 
 # TypeScript
 
-This template uses TypeScript, but takes advantage of Node.js 22.6's built-in type stripping feature
+This template uses TypeScript, but takes advantage of Node's built-in type stripping feature
 to run TypeScript code directly without a build step.
 
 This allows hot reloading to work without resorting to a complicated build system like Vite.
