@@ -55,9 +55,9 @@ Edit the project name in `wrangler.jsonc` to what you want, then add the followi
 }
 ```
 
-You can now deploy the site to Cloudflare Workers by running `npm run deploy`.
+You can now deploy the site to Cloudflare Workers by running `node --run deploy`.
 
-To set up automatic deployment, import your repository into Cloudflare Workers and set `npm run build` as your build command, and `npm run deploy` as your deploy command.
+To set up automatic deployment, import your repository into Cloudflare Workers and set `node --run build` as your build command, and `node --run deploy` as your deploy command.
 
 # IDE Integration
 
