@@ -50,7 +50,7 @@ Edit the project name in `wrangler.jsonc` to what you want, then add the followi
 ```json
 {
 	"scripts": {
-		"deploy": "wrangler deploy"
+		"deploy": "node --run check && node --run build && wrangler deploy"
 	}
 }
 ```
