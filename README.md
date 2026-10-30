@@ -64,10 +64,15 @@ To set up automatic deployment, import your repository into Cloudflare Workers a
 Wunphile uses ES6 template literals for composing HTML.
 Different IDEs need different configuration to provide syntax highlighting and intellisense for HTML inside template literals.
 
-## VS Code
+## VSCode / Cursor / Anything based on VSCode
 
 Install the [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html) extension.
 
 ## JetBrains IDEs (WebStorm, IntelliJ IDEA, etc.)
 
 Recent versions of JetBrains IDEs should support syntax highlighting and intellisense for HTML inside template literals out of the box.
+
+## Zed
+
+Zed with the HTML plugin installed does syntax highlighting for HTML inside template literals, but I can't find a plugin
+that provides intellisense for them. If you know one, please open an PR to add it to this README.
